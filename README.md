@@ -59,8 +59,8 @@ An enterprise-grade, open-source centralized panel to monitor, track, and manage
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/MojtabaZarreh/RBAC
-cd RBAC
+git clone https://github.com/MojtabaZarreh/IDMS
+cd IDMS
 ```
 2. Run with Docker:
 ```bash
