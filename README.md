@@ -18,7 +18,7 @@ An enterprise-grade, open-source centralized panel to monitor, track, and manage
 * Uptime Monitoring: Real-time website availability checks with instant notifications.
 
 <p align="center">
-  <img width="2866" height="1487" alt="Screenshot 2026-02-22 092530" src="https://github.com/user-attachments/assets/a8f35daa-5d99-443b-be81-ac3496e68845" />
+  <img width="2866" height="1487" style="border-radius: 20px;" alt="Screenshot 2026-02-22 092530" src="https://github.com/user-attachments/assets/a8f35daa-5d99-443b-be81-ac3496e68845" />
 </p>
 
 ### Security & Compliance
@@ -37,7 +37,7 @@ An enterprise-grade, open-source centralized panel to monitor, track, and manage
 * Smart Notifications: Early-warning emails before any service expires (7, 30, and 60-day intervals).
 
 <p align="center">
-  <img width="2873" height="1468" alt="Screenshot 2026-02-22 092835" src="https://github.com/user-attachments/assets/2aad8881-21cf-4814-897f-07ba38036d36" />
+  <img width="2873" height="1468" style="border-radius: 20px;" alt="Screenshot 2026-02-22 092835" src="https://github.com/user-attachments/assets/2aad8881-21cf-4814-897f-07ba38036d36" />
 </p>
 
 ## 🛠 Tech Stack
