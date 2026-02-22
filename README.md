@@ -36,6 +36,9 @@ An enterprise-grade, open-source centralized panel to monitor, track, and manage
 * Automated Cron Jobs: Daily background tasks to verify status and dates.
 * Smart Notifications: Early-warning emails before any service expires (7, 30, and 60-day intervals).
 
+<p align="center">
+  <img width="2873" height="1468" alt="Screenshot 2026-02-22 092835" src="https://github.com/user-attachments/assets/2aad8881-21cf-4814-897f-07ba38036d36" />
+</p>
 
 ## 🛠 Tech Stack
 
