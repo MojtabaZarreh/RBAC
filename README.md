@@ -9,10 +9,6 @@
 
 An enterprise-grade, open-source centralized panel to monitor, track, and manage digital assets including domains, servers, SSL certificates, and financial records. Built for teams that need to ensure zero downtime and prevent accidental expiration of critical services.
 
-<p align="center">
-  <img width="2866" height="1487" alt="Screenshot 2026-02-22 092530" src="https://github.com/user-attachments/assets/a8f35daa-5d99-443b-be81-ac3496e68845" />
-</p>
-
 ## 🔥 Key Features
 
 ### Infrastructure Tracking
@@ -20,6 +16,10 @@ An enterprise-grade, open-source centralized panel to monitor, track, and manage
 * Domain Management: Centralized dashboard for all domains with automatic WHOIS-based or manual expiry tracking.
 * Server & Hosting: Keep track of VPS, Dedicated, and Cloud instances across different providers.
 * Uptime Monitoring: Real-time website availability checks with instant notifications.
+
+<p align="center">
+  <img width="2866" height="1487" alt="Screenshot 2026-02-22 092530" src="https://github.com/user-attachments/assets/a8f35daa-5d99-443b-be81-ac3496e68845" />
+</p>
 
 ### Security & Compliance
 
