@@ -11,17 +11,6 @@ const DomainStatus = ({ title, content }) => (
   </div>
 );
 
-// function getDomainStatus(domain) {
-//   if (!domain) return "Inactive";
-//   if (!domain.expiration_date) return domain.status || "Inactive";
-
-//   const expDate = new Date(domain.expiration_date);
-//   const today = new Date();
-//   if (expDate < today) return "Expired";
-
-//   return domain.status;
-// }
-
   function getDomainStatus(domain) {
     if (!domain) return "Inactive";
     if (!domain.expiration_date) return domain.status || "Inactive";
@@ -33,8 +22,10 @@ const DomainStatus = ({ title, content }) => (
     return domain.status;
   }
 
-
-function getStatusLabel( status) {
+function getStatusLabel(status) {
+  console.log(status);
+  console.log('kjshdkjahksdhckahkdchadas');
+  
   switch (status) {
     case "Active":
       return "فعال";
@@ -86,7 +77,7 @@ export default function DomainCard({ domain, onViewEdit, onDelete }) {
                 <p className="card-category">
                   {String(domain.name || "").toLowerCase()}
                 </p>
-                <CardTitle tag="p">{getStatusLabel(domain ,status)}</CardTitle>
+                <CardTitle tag="p">{getStatusLabel(domain.status)}</CardTitle>
               </div>
             </Col>
           </Row>
