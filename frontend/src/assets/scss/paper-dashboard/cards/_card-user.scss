@@ -1,0 +1,74 @@
+.card-user {
+  .card-title {
+    color: #023a7a !important;
+  }
+
+  .image {
+    height: 200px;
+
+    img {
+      border-radius: 12px;
+    }
+  }
+
+  .author {
+    text-align: center;
+    text-transform: none;
+    margin-top: -56px;
+
+    a {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    a+p.description {
+      direction: ltr;
+      text-decoration: none;
+    }
+  }
+
+  .avatar {
+    width: 124px;
+    height: 124px;
+    border: 1px solid $white-color;
+    position: relative;
+    border-radius: 13px;
+  }
+
+  .btn-primary {
+    background-color: #0d5095 !important;
+    font-family: 'isans' !important;
+    &:hover {
+      background: #4e98e2;
+    }
+  }
+    .card-body {
+    }
+
+    hr {
+      margin: 5px 15px 15px;
+    }
+
+    .title {
+      color: #023a7a;
+    }
+
+    .card-body+.card-footer {
+      padding-top: 0;
+    }
+
+    .card-footer {
+      h5 {
+        font-size: 1.25em;
+        margin-bottom: 0;
+      }
+    }
+
+    .button-container {
+      margin-bottom: 6px;
+      text-align: center;
+    }
+
+  }

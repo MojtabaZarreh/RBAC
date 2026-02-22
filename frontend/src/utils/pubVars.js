@@ -1,0 +1,1 @@
+export const expireDay = 15

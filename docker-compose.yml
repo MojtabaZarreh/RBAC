@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  backend:
+    build: ./backend
+    container_name: django_app
+    volumes:
+      - ./backend:/app
+      - ./backend/db.sqlite3:/app/db.sqlite3
+    ports:
+      - "8000:8000"
+    restart: always
+
+  frontend:
+    build: ./frontend
+    container_name: react_app
+    stdin_open: true
+    tty: true
+    ports:
+      - "80:3000"
+    depends_on:
+      - backend
+    restart: always
+
+# admin@yahoo.com 123456789

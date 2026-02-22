@@ -1,0 +1,87 @@
+.modal-content {
+    direction: rtl;
+    font-family: 'isans';
+    background: #ffffff;
+    border-radius: 15px;
+
+    .modal-header {
+        align-items: center;
+
+        .close {
+            margin: 0 !important;
+            font-size: 2rem;
+        }
+    }
+
+    .modal-body {
+        position: relative;
+        flex: 1 1 auto;
+        padding: 1rem;
+        direction: rtl;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        flex-direction: column;
+        align-items: center;
+
+        .form-group {
+            flex-basis: 90%;
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .form-control {
+            cursor: pointer;
+        }
+    }
+
+    input,
+    textarea,
+    button,
+    select {
+        font-family: 'isans';
+        background: transparent !important;
+        color: rgb(0, 0, 0) !important;
+    }
+
+    option {
+        background: rgb(235, 235, 235);
+    }
+
+    .btn-primary {
+        background: rgb(3, 3, 121);
+        background: rgb(255, 145, 0) !important;
+
+        &:hover {}
+    }
+
+    .btn-secondary {
+        background: rgb(183 183 183) !important
+    }
+
+    .modal-title {
+        color: #000000;
+        font-weight: bold;
+        direction: rtl;
+    }
+
+    label {
+        color: rgb(0, 0, 0);
+    }
+
+    select {
+        height: calc(2.90rem + 4px) !important;
+    }
+}
+
+.swal2-title,
+.swal2-modal {
+    direction: rtl !important;
+}
+
+// .row {
+//     padding: 0 1rem;
+// }
+
