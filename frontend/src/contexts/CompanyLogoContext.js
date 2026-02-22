@@ -19,8 +19,6 @@ export const CompanyLogoProvider = ({ children }) => {
   const isUserLoggedIn = isAuthenticated === undefined ? !!user : isAuthenticated;
 
   useEffect(() => {
-    console.log("LogoContext Status:", { isAuthLoading, isUserLoggedIn, user });
-
     if (isAuthLoading) return;
 
     if (!isUserLoggedIn) {
@@ -32,7 +30,6 @@ export const CompanyLogoProvider = ({ children }) => {
     let abort = false;
 
     const loadLogo = async () => {
-      console.log('Start loading logo...'); 
       
       setLoading(true);
       try {
@@ -45,7 +42,6 @@ export const CompanyLogoProvider = ({ children }) => {
             ? res.logo
             : `${BASE_URL}/${res.logo.replace(/^\//, "")}`;
 
-          console.log("Logo loaded:", finalLogo);
           setLogo(finalLogo);
         }
       } catch (err) {

@@ -121,12 +121,6 @@ function Header({ bgColor,
               isOpen={dropdownOpen}
               toggle={(e) => dropdownToggle(e)}
             >
-              {/* <DropdownToggle caret nav>
-                <i className="nc-icon nc-settings-gear-65" />
-                <p>
-                  <span className="d-lg-none d-md-block">گزینه ها</span>
-                </p>
-              </DropdownToggle> */}
               <DropdownMenu right>
 
                 <DropdownItem>

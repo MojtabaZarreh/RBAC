@@ -23,9 +23,6 @@ const DomainStatus = ({ title, content }) => (
   }
 
 function getStatusLabel(status) {
-  console.log(status);
-  console.log('kjshdkjahksdhckahkdchadas');
-  
   switch (status) {
     case "Active":
       return "فعال";

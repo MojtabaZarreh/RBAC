@@ -1,28 +1,3 @@
-// const Avatar = ({ name, size = 40 }) => {
-//   const firstLetter = name?.trim()?.charAt(0)?.toUpperCase() || "?";
-//   const bgColor = stringToHslColor(name || "user");
-
-//   return (
-//     <div
-//       style={{
-//         width: size,
-//         height: size,
-//         borderRadius: "50%",
-//         backgroundColor: bgColor,
-//         display: "flex",
-//         alignItems: "center",
-//         justifyContent: "center",
-//         color: "#fff",
-//         fontWeight: "bold",
-//         fontSize: size / 2,
-//         flexShrink: 0,
-//         userSelect: "none",
-//       }}
-//     >
-//       {firstLetter}
-//     </div>
-//   );
-// };
 import React from "react";
 import stringToHslColor from "./../../utils/stringToHslColor"
 

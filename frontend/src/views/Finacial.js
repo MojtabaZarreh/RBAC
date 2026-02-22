@@ -74,7 +74,6 @@ export default function FinancialList() {
         });
       }
       for (let pair of fd.entries()) {
-        console.log(pair[0], pair[1]);
       }
       await createFinancial(fd);
 

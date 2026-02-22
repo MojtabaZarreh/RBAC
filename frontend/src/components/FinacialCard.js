@@ -20,7 +20,7 @@ export default function FinancialCard({ finacial, onViewEdit, onDelete }) {
     <Col lg="4" md="6" sm="6">
       <Card className="card-stats">
         <CardBody>
-          <Row>
+          <Row style={{ justifyContent: "center" }}>
             <Col md="2" xs="1">
               <div className="icon-big text-center icon-warning">
                 <i className="fa fa-credit-card text-primary credit-icon" />
@@ -32,8 +32,9 @@ export default function FinancialCard({ finacial, onViewEdit, onDelete }) {
                   className="card-category"
                   style={{
                     marginTop: "1.3rem",
-                    marginRight: "0.5rem",
+                    marginRight: "-0.5rem",
                     fontWeight: "bold",
+                    fontSize: "13px",
                   }}
                 >
                   {finacial.subject}

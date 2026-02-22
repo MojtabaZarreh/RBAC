@@ -46,7 +46,7 @@ export default function DomainModal({
   const [formData, setFormData] = useState(initialData.domain);
   const { user } = useAuth();
   const canEdit = user.role == "admin" || user.role == "editor";
-  console.log(canEdit);
+  
   const [recordDateInput, setRecordDateInput] = useState("");
 
   useEffect(() => {

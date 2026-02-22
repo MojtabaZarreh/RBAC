@@ -23,8 +23,6 @@ export default function SignInForm({ onSwitch }) {
       const data = await login(username, password);
 
       if (data && data.key) {
-        console.log("Login success, syncing user...");
-
         await loginAction(data.key);
 
         navigate("/admin/dashboard", {

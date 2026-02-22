@@ -1,9 +1,20 @@
 import React, { useEffect, useState } from "react";
-import { Row, Input, InputGroupAddon, InputGroupText, InputGroup } from "reactstrap";
+import {
+  Row,
+  Input,
+  InputGroupAddon,
+  InputGroupText,
+  InputGroup,
+} from "reactstrap";
 import AddNewBtn from "./AddNewBtn";
 import WebsiteCard from "../components/WebsiteCard";
 import AddEditModal from "../components/AddEditModal.js";
-import { getWebsites, deleteWebsite, createWebsite, checkSite } from "../services/websites.api";
+import {
+  getWebsites,
+  deleteWebsite,
+  createWebsite,
+  checkSite,
+} from "../services/websites.api";
 import Swal from "sweetalert2";
 import { useAuth } from "../contexts/AuthContext";
 
@@ -39,7 +50,7 @@ function Websites() {
     try {
       await createWebsite({
         url: formData.url,
-        description: formData.description
+        description: formData.description,
       });
 
       toggleAddModal();
@@ -118,7 +129,7 @@ function Websites() {
     }
   }
 
-  const filteredWebsites = websites.filter(site => {
+  const filteredWebsites = websites.filter((site) => {
     if (statusFilter !== "ALL" && site.status !== statusFilter) return false;
 
     if (searchText.trim() !== "") {
@@ -136,13 +147,15 @@ function Websites() {
 
   return (
     <div className="content">
-      {canEdit &&
-        <AddNewBtn content="افزودن وب سایت جدید"
+      {canEdit && (
+        <AddNewBtn
+          content="افزودن وب سایت جدید"
           id="addNewWebsite__btn"
           onClick={toggleAddModal}
-        />}
+        />
+      )}
 
-      {canEdit &&
+      {canEdit && (
         <AddEditModal
           isOpen={addModalOpen}
           toggle={toggleAddModal}
@@ -151,7 +164,8 @@ function Websites() {
           onSave={handleAdd}
           isEditMode={false}
           itemData={null}
-        />}
+        />
+      )}
 
       <div className="filter-status" style={{ margin: "15px 0" }}>
         <label htmlFor="websiteStatusFilter" style={{ marginRight: "10px" }}>
@@ -159,7 +173,7 @@ function Websites() {
         </label>
         <select
           id="websiteStatusFilter"
-          onChange={e => setStatusFilter(e.target.value)}
+          onChange={(e) => setStatusFilter(e.target.value)}
           value={statusFilter}
         >
           <option value="ALL">همه</option>
@@ -169,11 +183,18 @@ function Websites() {
 
         <form>
           <InputGroup className="no-border search-bar">
-            <Input type="text"
+            <Input
+              type="text"
               placeholder="جستجو بر اساس نام یا URL..."
-              style={{ width: "250px", display: "inline-block", marginRight: "10px", fontFamily: "isans" }}
+              style={{
+                width: "250px",
+                display: "inline-block",
+                marginRight: "10px",
+                fontFamily: "isans",
+              }}
               value={searchText}
-              onChange={e => setSearchText(e.target.value)} />
+              onChange={(e) => setSearchText(e.target.value)}
+            />
             <InputGroupAddon addonType="append">
               <InputGroupText>
                 <i className="nc-icon nc-zoom-split" />
@@ -185,8 +206,13 @@ function Websites() {
 
       <Row>
         {filteredWebsites.length > 0 ? (
-          filteredWebsites.map(site => (
-            <WebsiteCard key={site.id} site={site} onDelete={handleDelete} onCheck={handleCheck} />
+          filteredWebsites.map((site) => (
+            <WebsiteCard
+              key={site.id}
+              site={site}
+              onDelete={handleDelete}
+              onCheck={handleCheck}
+            />
           ))
         ) : (
           <div className="none-result__box">متاسفانه نتیجه‌ای یافت نشد</div>

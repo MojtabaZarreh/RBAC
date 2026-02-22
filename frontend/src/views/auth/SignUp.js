@@ -37,8 +37,6 @@ export default function SignUpForm({ onSwitch }) {
         },
       });
     } catch (err) {
-      console.log(err);
-
       setError("ثبت نام انجام نشد. ممکن است ایمیل تکراری باشد");
     }
   };

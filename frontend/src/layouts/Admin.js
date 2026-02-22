@@ -40,7 +40,6 @@ function Admin() {
 
   React.useEffect(() => {
     const hasShown = sessionStorage.getItem("welcomeAlertShown");
-    console.log("LOCATION STATE 👉", location.state);
     if (location.state?.showWelcome && !hasShown) {
       Swal.fire({
         title: ` خوش آمدید`,

@@ -11,7 +11,7 @@ export default function AuthPage() {
   };
 
   const handleChangeType = () => {
-    alert('hello')
+    alert("hello");
   };
 
   const containerClass =
@@ -20,8 +20,8 @@ export default function AuthPage() {
   return (
     <div className="auth-page">
       <div className={containerClass} id="container">
-<SignUpForm onSwitch={() => handleOnClick("signIn")} />
-<SignInForm onSwitch={() => handleOnClick("signUp")} />
+        <SignUpForm onSwitch={() => handleOnClick("signIn")} />
+        <SignInForm onSwitch={() => handleOnClick("signUp")} />
         <div className="overlay-container">
           <div className="overlay">
             <div className="overlay-panel overlay-left">
@@ -45,7 +45,8 @@ export default function AuthPage() {
                 <span>حساب ندارید؟ </span>
                 <button
                   className="ghost"
-                  onClick={() => handleOnClick("signUp")}>
+                  onClick={() => handleOnClick("signUp")}
+                >
                   ثبت نام کنید
                 </button>
               </div>

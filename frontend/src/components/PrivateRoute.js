@@ -13,9 +13,5 @@ export default function PrivateRoute({ children, roles }) {
     return <Navigate to="/auth" replace />;
   }
 
-  // if (roles && !roles.includes(user.role)) {
-  //   return <Navigate to="/auth" replace />;
-  // }
-
   return children;
 }

@@ -9,9 +9,7 @@ const Username = () => {
   useEffect(() => {
     const fetchMe = async () => {
       try {
-        const res = await getMe();
-        console.log(res);
-        
+        const res = await getMe();        
         setFullname(res?.fullname || "");
       } catch (err) {
         console.error("Failed to fetch user info:", err);

@@ -8,7 +8,6 @@ export const login = async (username, password) => {
 
 export const register = async (company, email, password, fullname) => {
   const { data } = await http.post("/register", { company, email, password, fullname });
-  console.log(data);
   localStorage.setItem("api_token", data.key);
   return data;
 };

@@ -8,7 +8,6 @@ export default function MyPage() {
   const toggleModal = () => setModalOpen(!modalOpen);
 
   const handleAdd = (data) => {
-    console.log("New item:", data);
   };
 
   return (

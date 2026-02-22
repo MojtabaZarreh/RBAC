@@ -226,7 +226,6 @@ export default function Dashboard() {
         />
       )}
 
-      {/* {(user.role === "admin" || user.role === "editor") && */}
       <AddEditModal
         isOpen={editModalOpen}
         toggle={toggleEditModal}
