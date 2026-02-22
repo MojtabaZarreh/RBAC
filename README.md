@@ -30,3 +30,48 @@ An enterprise-grade, open-source centralized panel to monitor, track, and manage
 
 * Automated Cron Jobs: Daily background tasks to verify status and dates.
 * Smart Notifications: Early-warning emails before any service expires (7, 30, and 60-day intervals).
+
+
+## 🛠 Tech Stack
+
+* Backend: [Django Ninja](https://django-ninja.rest-framework.com/) (Fast, Async-ready, Type-safe API)
+* Frontend: [React.js](https://www.google.com/search?q=https://react.js) (Modern, Component-based UI)
+* Database: SQLite
+* Containerization: Docker & Docker Compose
+* Task Scheduling: Django Management Commands + System Cron
+
+
+## 🚀 Installation & Setup
+
+### Prerequisites
+
+* Docker & Docker Compose
+
+### Quick Start
+
+1. Clone the repository:
+```bash
+git clone https://github.com/MojtabaZarreh/RBAC
+cd RBAC
+```
+2. Run with Docker:
+```bash
+docker compose up --build
+```
+3. Access the Application:
+* Frontend: http://localhost/
+* API Documentation (Swagger): http://localhost:8000/api/docs
+
+
+## 🔒 Security Note
+
+This application handles sensitive data (passwords, server IPs, and invoices). It is highly recommended to:
+
+* Use HTTPS in production.
+* Keep the SECRET_KEY secure.
+* Enable Database encryption for the Password Vault module.
+
+
+  ## 🤝 Contributing
+  
+Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
